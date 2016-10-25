@@ -1,0 +1,262 @@
+@import 'font';
+
+//$primary: #fffb95;
+$primary: #f4ee56;
+$secondary: #99963D;
+
+//MENU
+
+.top-bar {
+    position: fixed;
+    width: 100%;
+    li {
+        font-size: 1.2rem;
+    }
+}
+
+.top-bar-right {
+    .menu {
+        a {
+            color: $black;
+            transition: all ease 0.2s;
+            &:hover {
+                color: $secondary;
+            }
+        }
+    }
+}
+
+.menu {
+    li {
+        font-size: 1.1rem;
+    }
+}
+
+.vertical {
+    padding: 12px 0;
+    background-color: $primary;
+    a {
+        color: $black;
+        &:hover {
+            color: $secondary;
+        }
+    }
+}
+
+//CONTENT
+
+.intro {
+    background-image: url(../img/header.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+    margin-bottom: 40px;
+       @include breakpoint (small only) {
+        padding: 100px 0;
+    }
+    h3 {
+        font-family: $MainFont;
+    }
+    #bingung {
+        background-color: rgba(255, 251, 149, 0.5);
+        padding: 30px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        @include breakpoint (small only) {
+            background-color: rgba(255, 251, 149, 0);
+            h3 {
+                color: white;
+                text-align: center;
+            }
+        }
+
+    }
+}
+
+.les {
+    i {
+        color: #ded71f;
+    }
+    h1 {
+        font-family: $IDFont;
+        font-size: 10rem;
+        transition: all ease 0.2s;
+        @include breakpoint (small only) {
+            font-size: 5rem;
+        }
+    }
+    #subhead {
+        margin-top: -80px;
+        transition: all ease 0.4s;
+        @include breakpoint (small only) {
+            margin-top: -40px;
+        }
+    }
+    #cari {
+        @include breakpoint (small only) {
+            margin-bottom: 20px;
+        }
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    .lead {
+        font-size: 1.5rem;
+    }
+}
+
+.metode {
+    padding: 50px 0;
+    @include breakpoint (small only) {
+        padding: 25px 0;
+    }
+    h1 {
+        font-family: $MainFont;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+.benefit {
+    padding: 50px 0;
+       @include breakpoint (small only) {
+        padding: 25px 0;
+    }
+    h1 {
+        margin-bottom: 40px;
+        font-family: $MainFont;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    a {
+        font-size: 1.2rem;
+    }
+    i {
+        color: #ded71f;
+    }
+}
+
+.alat {
+    padding: 50px 0;
+       @include breakpoint (small only) {
+        padding: 25px 0;
+    }
+    h1 {
+        font-family: $MainFont;
+    }
+    #alat {
+        margin-bottom: 40px;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+.zianturi {
+    font-family: $IDFont;
+}
+
+.sebelum {
+    padding: 100px 0 50px 0;
+       @include breakpoint (small only) {
+        padding: 50px 0;
+    }
+    p,li {
+        font-size: 1.2rem;
+    }
+}
+
+#setelah {
+    margin-bottom: 40px;
+    i {
+        font-size: 3rem;
+    }
+}
+
+.pilihkursus {
+    h1 {
+        font-family: $MainFont;
+    }
+    i {
+        color: #ded71f;
+    }
+}
+
+.pilih {
+    h3 {
+        font-family: $MainFont;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+    i {
+        color: #ded71f;
+    }
+}
+
+.daftarlink {
+    padding: 40px 0;
+    a {
+        font-size: 1.3rem;
+        font-family: $MainFont;
+        color: $black;
+    }
+    .button {
+        background-color: $primary;
+        &:hover {
+            background-color: lighten($secondary, 20%);
+        }
+    }
+}
+
+.daftar {
+    padding: 100px 0 50px 0;
+    @include breakpoint (small only) {
+        padding: 50px 0;
+    }
+    h1 {
+        font-family: $MainFont;
+    }
+    i {
+        color: #ded71f;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+.kontak {
+    padding: 100px 0 50px 0;
+    @include breakpoint (small only) {
+        padding: 50px 0;
+    }
+    i {
+        color: #ded71f;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+//FOOTER
+
+footer {
+    background-color: $primary;
+    padding: 40px 0;
+    h1 {
+        font-family: $IDFont;
+        font-size: 5rem;
+    }
+    h3 {
+        margin-top: -40px;
+    }
+    a {
+        color: $black;
+        &:hover {
+            color: $secondary;
+        }
+    }
+}
