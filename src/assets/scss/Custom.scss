@@ -159,6 +159,21 @@ $secondary: #99963D;
     font-family: $IDFont;
 }
 
+.pilihlink {
+    padding: 40px 0;
+    a {
+        font-family: $MainFont;;
+        font-size: 1.5rem;
+        color: $black;
+    }
+    .button {
+        background-color: $primary;
+        &:hover {
+            background-color: lighten($secondary, 20%);
+        }
+    }
+}
+
 .sebelum {
     padding: 100px 0 50px 0;
        @include breakpoint (small only) {
@@ -179,6 +194,9 @@ $secondary: #99963D;
 .pilihkursus {
     h1 {
         font-family: $MainFont;
+    }
+    p {
+        font-size: 1.2rem;
     }
     i {
         color: #ded71f;
