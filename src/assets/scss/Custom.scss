@@ -1,11 +1,9 @@
 @import 'font';
-
+@import 'slick';
 //$primary: #fffb95;
 $primary: #f4ee56;
 $secondary: #99963D;
-
 //MENU
-
 .top-bar {
     position: fixed;
     width: 100%;
@@ -44,7 +42,6 @@ $secondary: #99963D;
 }
 
 //CONTENT
-
 .intro {
     background-image: url(../img/header.png);
     background-position: center;
@@ -52,8 +49,8 @@ $secondary: #99963D;
     background-size: cover;
     padding: 200px 0;
     margin-bottom: 40px;
-       @include breakpoint (small only) {
-        padding: 100px 0;
+    @include breakpoint (small only) {
+        padding: 150px 0;
     }
     h3 {
         font-family: $MainFont;
@@ -70,7 +67,6 @@ $secondary: #99963D;
                 text-align: center;
             }
         }
-
     }
 }
 
@@ -121,7 +117,7 @@ $secondary: #99963D;
 
 .benefit {
     padding: 50px 0;
-       @include breakpoint (small only) {
+    @include breakpoint (small only) {
         padding: 25px 0;
     }
     h1 {
@@ -139,9 +135,24 @@ $secondary: #99963D;
     }
 }
 
+.pengajar {
+    padding: 40px 0;
+    a {
+        font-family: $MainFont;
+        font-size: 1.5rem;
+        color: $black;
+    }
+    .button {
+        background-color: $primary;
+        &:hover {
+            background-color: lighten($secondary, 20%);
+        }
+    }
+}
+
 .alat {
     padding: 50px 0;
-       @include breakpoint (small only) {
+    @include breakpoint (small only) {
         padding: 25px 0;
     }
     h1 {
@@ -153,16 +164,22 @@ $secondary: #99963D;
     p {
         font-size: 1.2rem;
     }
+    #drumsmall,
+    #pianosmall,
+    #gitarsmall {
+        padding-bottom: 20px;
+    }
 }
 
 .zianturi {
     font-family: $IDFont;
 }
 
-.pilihlink {
+.pilihlink,
+.pengajar {
     padding: 40px 0;
     a {
-        font-family: $MainFont;;
+        font-family: $MainFont;
         font-size: 1.5rem;
         color: $black;
     }
@@ -176,10 +193,11 @@ $secondary: #99963D;
 
 .sebelum {
     padding: 100px 0 50px 0;
-       @include breakpoint (small only) {
+    @include breakpoint (small only) {
         padding: 50px 0;
     }
-    p,li {
+    p,
+    li {
         font-size: 1.2rem;
     }
 }
@@ -216,7 +234,10 @@ $secondary: #99963D;
 }
 
 .daftarlink {
-    padding: 40px 0;
+    padding: 80px 0;
+    @include breakpoint(small only) {
+        padding: 40px 0;
+    }
     a {
         font-size: 1.3rem;
         font-family: $MainFont;
@@ -260,7 +281,6 @@ $secondary: #99963D;
 }
 
 //FOOTER
-
 footer {
     background-color: $primary;
     padding: 40px 0;
